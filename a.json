@@ -1,0 +1,11 @@
+{
+  "name": "a",
+  "esy": {
+    "build": "dune build --profile=release ./src/a"
+  },
+  "dependencies": {
+    "@opam/dune": "*",
+    "@opam/reason": "*",
+    "ocaml": "*"
+  }
+}

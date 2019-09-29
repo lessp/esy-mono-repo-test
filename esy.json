@@ -1,0 +1,13 @@
+{
+  "name": "esy-mono-repo",
+  "esy": {
+    "build": ["dune build -p a", "dune build -p b"]
+  },
+  "dependencies": {
+    "a": "lessp/esy-mono-repo",
+    "b": "lessp/esy-mono-repo",
+    "@opam/dune": "*",
+    "@opam/reason": "*",
+    "ocaml": "<4.8.0"
+  }
+}
