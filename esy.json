@@ -1,5 +1,5 @@
 {
-  "name": "esy-mono-repo",
+  "name": "esy-mono-repo-test",
   "esy": {
     "build": ["dune build -p a", "dune build -p b"]
   },
@@ -7,8 +7,7 @@
     "example": "esy dune exec example/Example.exe"
   },
   "dependencies": {
-    "a": "lessp/esy-mono-repo#89fca9a",
-    "b": "lessp/esy-mono-repo#89fca9a",
+    "b": "lessp/esy-mono-repo-test#bde7004",
     "@opam/dune": "*",
     "@opam/reason": "*",
     "ocaml": "<4.8.0"
