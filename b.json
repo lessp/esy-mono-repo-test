@@ -4,9 +4,12 @@
     "build": "dune build --profile=release ./src/b"
   },
   "dependencies": {
-    "a": "lessp/esy-mono-repo-test#bde7004",
+    "a": "*",
     "@opam/dune": "*",
     "@opam/reason": "*",
     "ocaml": "*"
+  },
+  "resolutions": {
+    "a": "link:./a.json"
   }
 }

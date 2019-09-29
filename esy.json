@@ -7,9 +7,12 @@
     "example": "esy dune exec example/Example.exe"
   },
   "dependencies": {
-    "b": "lessp/esy-mono-repo-test#bde7004",
+    "b": "*",
     "@opam/dune": "*",
     "@opam/reason": "*",
     "ocaml": "<4.8.0"
+  },
+  "resolutions": {
+    "b": "link:./b.json"
   }
 }
