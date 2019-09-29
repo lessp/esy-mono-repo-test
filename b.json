@@ -1,7 +1,7 @@
 {
   "name": "b",
   "esy": {
-    "build": "dune build --profile=release ./src/b"
+    "build": "dune build --profile=release --only-packages=b --root ."
   },
   "dependencies": {
     "a": "*",
