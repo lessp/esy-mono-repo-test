@@ -1,18 +1,21 @@
 {
   "name": "esy-mono-repo-test",
   "esy": {
-    "build": ["dune build -p a", "dune build -p b"]
+    "build": ["dune build -p a", "dune build -p b"],
+    "install": ["esy-installer a.install", "esy-installer b.install"]
   },
   "scripts": {
-    "example": "esy dune exec example/Example.exe"
+    "example": "esy dune exec example/example.exe"
   },
   "dependencies": {
+    "a": "*",
     "b": "*",
     "@opam/dune": "*",
     "@opam/reason": "*",
     "ocaml": "<4.8.0"
   },
   "resolutions": {
+    "a": "link:./a.json",
     "b": "link:./b.json"
   }
 }
