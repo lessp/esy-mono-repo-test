@@ -3,9 +3,12 @@
   "esy": {
     "build": ["dune build -p a", "dune build -p b"]
   },
+  "scripts": {
+    "example": "esy dune exec example/Example.exe"
+  },
   "dependencies": {
-    "a": "lessp/esy-mono-repo",
-    "b": "lessp/esy-mono-repo",
+    "a": "lessp/esy-mono-repo#89fca9a",
+    "b": "lessp/esy-mono-repo#89fca9a",
     "@opam/dune": "*",
     "@opam/reason": "*",
     "ocaml": "<4.8.0"
